@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quarto Projeto Tailwind CSS</title>
+    <!-- 	None	    width: 100%;
+    sm (640px)	    max-width: 640px;
+    md (768px)	    max-width: 768px;
+    lg (1024px)	    max-width: 1024px;
+    xl (1280px)	    max-width: 1280px;
+    2xl (1536px)	max-width: 1536px; -->
+    <!-- 
+        text-xs:        12px    font-thin       100 weight
+        text-sm:        14px    font-extralight 200 weight
+        text-base:      16px    font-light      300 weight
+        text-lg:        18px    font-normal     400 weight
+        text-xl:        20px    font-medium     500 weight
+        text-2xl:       24px    font-semibold   600 weight
+        text-3xl:       30px    font-bold       700 weight
+        text-4xl:       36px    font-extrabold  800 weight
+        text-5xl:       48px    font-black      900 weight
+     -->
+</head>
+<body class="bg-white min-h-screen scroll-smooth">
+    <main>
+        <section id="home" style="background-image: url(/public/assets/bg-section1.png);" class="bg-no-repeat w-full h-full bg-cover flex flex-col justify-center p-5">
+            <figure class="pt-5 pb-10">
+                <a href="#home"><img src="/public/assets/logoDNC.svg" alt="Logo DNC" class="h-10"></a>
+            </figure>
+            <h1 class="text-white text-3xl font-medium tracking-tighter text-center pt-5 pb-10">Dê os primeiros passos da sua carreira em Tecnologia</h1>
+            <p class="text-white text-base text-center tracking-tight pb-16">
+                Inscreva-se no curso gratuito de Introdução à
+                Tecnologia da DNC School e aprenda os principais
+                fundamentos para construir experiências efetivas.
+            </p>
+        </section>
+        <section class=" flex flex-col justify-center bg-gray-200">
+            <div class="flex flex-col flex-1 text-center items-center p-11">
+                <figure class="flex-1 text-blue-400">
+                    <img src="/public/assets/icon1.svg" alt="Certificado">
+                </figure>
+                <p class="text-xl font-normal tracking-tight pt-2">Certificado de conclusão</p>
+            </div>
+            <div class="flex flex-col flex-1 text-center items-center p-11">
+                <figure class="flex-1 text-blue-400">
+                    <img src="/public/assets/icon2.svg" alt="Certificado">
+                </figure>
+                <p class="text-xl font-normal tracking-tight pt-2">4 horas de conteúdo</p>
+            </div>
+            <div class="flex flex-col flex-1 text-center items-center p-11">
+                <figure class="flex-1 text-blue-400">
+                    <img src="/public/assets/icon3.svg" alt="Certificado">
+                </figure>
+                <p class="text-xl font-normal tracking-tight pt-2">Aulas online gravadas</p>
+            </div>
+        </section>
+        <section class="flex flex-col justify-center p-5">
+            <div class="">
+                <h2 class="pt-5 pb-5 text-4xl text-center tracking-tight text-blue-400 font-medium">Aprenda com especialistas e comece seu primeiro projeto</h2>
+                <figure class="pt-5 pb-3">
+                    <img src="/public/assets/img01.jpg" alt="" class="bg-no-repeat bg-cover rounded-lg  hover:shadow-lg transition-all duration-300">
+                </figure>
+                <p class="pt-5 text-xl tracking-tight">
+                    Conheça o processo de desenvolvimento e entenda como utilizar os principais métodos e ferramentas da área para resolver problemas complexos
+                </p>
+                <p class="pt-5 pb-5 text-xl tracking-tight">
+                    Conquiste seu certificado e desenvolva um projeto prático para aplicar seus conhecimentos.
+                </p>
+            </div>
+        </section>
+        <section class="bg-blue-400 px-5 pt-10 pb-10">
+            <p class="pt-8 pb-8 text-white text-2xl font-medium tracking-tight text-center">Mais de 500 alunos já iniciaram seus estudos</p>
+            <div class="flex flex-col gap-5 pb-10">
+                <div class=" bg-white flex flex-col items-center rounded-xl pt-3 pb-5 px-3 hover:shadow-lg">
+                    <figure>
+                        <img src="/public/assets/bruna.png" alt=""  class="rounded-full pb-5">
+                    </figure>
+                    <p class="text-lg tracking-tight">
+                        “O curso da DNC School foi o ponto de partida da minha transição de carreira.
+                        Hoje já consegui minha primeira vaga na área!”
+                    </p>
+                    <span class="text-black pt-4 text-base font-semibold tracking-tight">Bruna, desenvolvedora Front-End</span>
+                </div>
+                <div class=" bg-white flex flex-col items-center rounded-xl pt-3 pb-5 px-3 hover:shadow-lg">
+                    <figure>
+                        <img src="/public/assets/leonardo.png" alt=""  class="rounded-full pb-5">
+                    </figure>
+                    <p class="text-lg tracking-tight">
+                        “Gostei muito da metodologia e da plataforma da Escola DNC.
+                        Os materiais são todos muito bons”
+                    </p>
+                    <span class="text-black pt-4 text-base font-semibold tracking-tight">Leonardo, desenvolvedor Back-End</span>
+                </div>
+            </div>
+        </section>
+        <section class=" px-5 pt-10 pb-10">
+            <p class="pt-8 pb-8 text-2xl font-medium tracking-tight text-center">Comece agora mesmo e dê o próximo passo da sua carreira</p>
+            <form action="" class="flex flex-col text-center gap-8 pb-10">
+                <input type="text" placeholder="Nome" required class="bg-slate-200 text-lg border-none rounded-lg p-3 placeholder-black">
+                <input type="email" placeholder="E-mail" required class="bg-slate-200 text-lg border-none rounded-lg p-3 placeholder-black">
+                <input type="text" placeholder="Telefone" required class="bg-slate-200 text-lg border-none rounded-lg p-3 placeholder-black">
+                <a href="" type="submit" class="bg-blue-500 text-white text-base font-medium py-2 px-8 rounded-md mx-auto hover:bg-blue-400 hover:shadow-lg transition-all duration-300">Acesse a ementa grátis</a>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
